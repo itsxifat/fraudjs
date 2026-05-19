@@ -3,7 +3,7 @@
 Check a customer's delivery and fraud history on [Steadfast Courier (Packzy)](https://merchant.packzy.com) by phone number. Drop in credentials and just call `checkPhone()` — login, cookies, and session refresh are handled automatically.
 
 ```js
-import { checkPhone } from 'fraudjs';
+import { checkPhone } from 'steadfast-fraud';
 
 const result = await checkPhone('01791729300');
 // { delivered: 12, cancelled: 1, frauds: 0, consignment: [...] }
@@ -21,7 +21,7 @@ const result = await checkPhone('01791729300');
 ## Install
 
 ```bash
-npm install fraudjs
+npm install steadfast-fraud
 ```
 
 ---
@@ -58,7 +58,7 @@ npx fraudjs add-credential
 
 Or from code:
 ```js
-import { addCredential } from 'fraudjs';
+import { addCredential } from 'steadfast-fraud';
 await addCredential({ email: 'you@example.com', password: 'yourpassword' });
 ```
 
@@ -132,7 +132,7 @@ import {
   AllCredentialsFailedError,
   AuthError,
   NetworkError,
-} from 'fraudjs';
+} from 'steadfast-fraud';
 
 try {
   return await checkPhone(phone);

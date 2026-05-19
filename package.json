@@ -1,6 +1,6 @@
 {
   "name": "steadfast-fraud",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Check customer fraud/delivery stats on Steadfast Courier (Packzy) by phone number — handles login, session cookies, multi-account failover, and 24h auto-refresh automatically.",
   "type": "module",
   "engines": {
