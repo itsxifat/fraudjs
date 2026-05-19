@@ -17,7 +17,7 @@ const _client = new SteadfastClient();
 /**
  * Look up delivery and fraud history for a customer phone number.
  *
- * @param {string} phone - e.g. '01791729300'
+ * @param {string} phone - e.g. '01700000000'
  * @returns {Promise<{ delivered: number, cancelled: number, frauds: number, consignment: Array }>}
  */
 export async function checkPhone(phone) {

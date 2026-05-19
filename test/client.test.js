@@ -88,7 +88,7 @@ describe('SteadfastClient.checkPhone', () => {
     globalThis.fetch = makeSuccessFetch(calls);
 
     const client = new SteadfastClient();
-    const result = await client.checkPhone('01791729300');
+    const result = await client.checkPhone('01700000000');
 
     assert.equal(result.delivered, 5);
     assert.equal(result.cancelled, 1);
@@ -130,7 +130,7 @@ describe('SteadfastClient.checkPhone', () => {
     };
 
     const client = new SteadfastClient();
-    const result = await client.checkPhone('01791729300');
+    const result = await client.checkPhone('01700000000');
     assert.equal(result.delivered, 5);
   });
 
@@ -181,7 +181,7 @@ describe('SteadfastClient.checkPhone', () => {
     };
 
     const client = new SteadfastClient();
-    const result = await client.checkPhone('01791729300');
+    const result = await client.checkPhone('01700000000');
     assert.equal(result.delivered, 5);
   });
 
@@ -210,7 +210,7 @@ describe('SteadfastClient.checkPhone', () => {
 
     const client = new SteadfastClient();
     await assert.rejects(
-      () => client.checkPhone('01791729300'),
+      () => client.checkPhone('01700000000'),
       (err) => {
         assert.equal(err.name, 'AllCredentialsFailedError');
         assert.ok(Array.isArray(err.failures));

@@ -5,7 +5,7 @@ Check a customer's delivery and fraud history on [Steadfast Courier (Packzy)](ht
 ```js
 import { checkPhone } from 'steadfast-fraud';
 
-const result = await checkPhone('01791729300');
+const result = await checkPhone('01700000000');
 // { delivered: 12, cancelled: 1, frauds: 0, consignment: [...] }
 ```
 
@@ -83,7 +83,7 @@ FRAUDJS_SECRET=<that value>
 Returns delivery and fraud stats for a phone number. Tries each configured credential in order; if one fails it moves to the next.
 
 ```js
-const { delivered, cancelled, frauds, consignment } = await checkPhone('01791729300');
+const { delivered, cancelled, frauds, consignment } = await checkPhone('01700000000');
 ```
 
 **Returns:**
@@ -160,7 +160,7 @@ try {
 ## CLI
 
 ```bash
-npx fraudjs check 01791729300
+npx fraudjs check 01700000000
 npx fraudjs add-credential
 npx fraudjs list-credentials
 npx fraudjs remove-credential you@example.com
